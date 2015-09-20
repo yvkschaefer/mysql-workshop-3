@@ -87,7 +87,7 @@
 * List all possible domain name values for ```ElectronicMail``` (email@```domain.name```)
 
 ### Exercise 8
-* List how many phone were landlines, cellular and fax for entries with birthdates between October 1950 and October 1960
+* List how many phones were landlines, cellular and fax for entries with birthdates between October 1950 and October 1960
 
 ### Exercise 9
 * List all Account emails with AddressBook containing Phone numbers with a country code
@@ -102,32 +102,29 @@
 * List 100 phone numbers in separated parts: country code, area code and line number
 
 ### Exercise 13
-* List 100 phone numbers in separated parts: country code, area code and line number
-
-### Exercise 14
 * List the date difference, in days, between AddressBook creation and modification dates
 
-### Exercise 15
+### Exercise 14
 * Reverse all fax phone numbers, keeping the phone numbers in a valid format
 * List all of the new fax phone number values
 
-### Exercise 16
+### Exercise 15
 * Transform all ```work``` emails into ```home``` emails and vice versa
 
-### Exercise 17
+### Exercise 16
 * Randomize the civic number of 10 ```other``` addresses whose primary key value ranges between 715 and 800
 
-### Exercise 18
-* Return a list of adresses ordered by length of the combined columns ```AddressLine1``` and ```city```
+### Exercise 17
+* Return a list of adresses ordered by length of the combined columns ```addressLine1``` and ```city```
 
-### Exercise 19
+### Exercise 18
 * Create an exact copy of ```decodemtl_addressbook.Account``` and its data
 * The copy's ```modifiedOn``` column should reflect today's date
 
-### Exercise 20
+### Exercise 19
 * Return a list of all accounts with columns ```createdOn``` in the format of ```Sept 20 2016 11:45 AM``` and ```modifiedOn``` in the format ```20th 16 Tue 20 09 Sep 264```
 
-### Exercise 21 (Workshop Challenge)
+### Exercise 20 (Workshop Challenge)
 * Connect to your MySQL instance using the ```root``` user
 * Execute this Statement: ```DROP DATABASE mysql; EXIT;```
 * Execute this Command ```sudo killall mysqld```
