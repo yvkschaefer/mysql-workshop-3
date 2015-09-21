@@ -1,5 +1,6 @@
 # MySQL Workshop 3 - Advanced Data Manipulation
 
+<img src="http://cdn.meme.am/instances2/500x/1987981.jpg" border="0" width="850">
 
 ## Workshop Contents
 
