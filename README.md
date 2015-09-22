@@ -125,7 +125,10 @@
 ### Exercise 19
 * Return a list of all accounts with columns ```createdOn``` in the format of ```Sept 20 2016 11:45 AM``` and ```modifiedOn``` in the format ```20th 16 Tue 20 09 Sep 264```
 
-### Exercise 20 (Workshop Challenge)
+### Exercise 20
+* Complete Workshop Challenge from [MySQL Workshop 2](https://github.com/DecodeMTL/mysql-workshop-2)
+
+### Exercise 21 (Workshop Challenge)
 * Connect to your MySQL instance using the ```root``` user
 * Execute this Statement: ```DROP DATABASE mysql; EXIT;```
 * Execute this Command ```sudo killall mysqld```
