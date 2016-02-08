@@ -44,11 +44,10 @@
 * Fork this repository
 * Create a new Cloud9 Workspace
 * For every exercise in this Workshop:
-  * Create a new branch off from "master" named "exercise-n"
   * Create a new file named "exercise-n.txt", containing:
-    * The SQL Query used, when applicable
-    * The SQL Query results, when applicable
-  * Create a pull request
+    * The SQL Statement used, when applicable
+    * The SQL Statement results, when applicable
+* After the first exercise you commit, do a pull request from your master branch. Then, commit and push after each exercise so that we can see your progress.
 
 ### Exercise 1
 * Reflect the data model shown in ```schema/addressbook_normalized.png``` within database ```decodemtl_addressbook```
