@@ -57,8 +57,8 @@
   * ```Entry.type``` is an ENUM column permitting ```phone```, ```address``` and ```electronic-mail```
   * ```Address.id``` is a primary auto-increment key
   * ```Address.type``` is an ENUM column permitting ```home```, ```work``` and ```other```
-  * ```Email.id``` is a primary auto-increment key
-  * ```Email.type``` is an ENUM column permitting ```home```, ```work``` and ```other```
+  * ```ElectronicMail.id``` is a primary auto-increment key
+  * ```ElectronicMail.type``` is an ENUM column permitting ```home```, ```work``` and ```other```
   * ```Phone.id``` is a primary auto-increment key
   * ```Phone.type``` is an ENUM column permitting ```home```, ```work``` and ```other```
   * ```Phone.subtype``` is an ENUM column permitting ```landline```, ```cellular``` and ```fax```
