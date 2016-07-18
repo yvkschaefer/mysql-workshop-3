@@ -40,6 +40,18 @@
 * [Time](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_time)
 
 
+## Before starting!
+With your newly acquired knowledge, go back to mysql-workshop-2 and answer the following questions about the address book schema:
+
+### Exercise 1
+* Which Account owns the most Address Books?
+* Which Address Book contains the most Entries?
+
+### Exercise 2
+* How many Address Book Entries have phones starting with area code ```3XX```?
+* How many Address Book Entries have ```home``` phones not containing the digit ```5```?
+* How many Address Book Entries are ```work``` phones starting with a country code?
+
 ## Workshop Instructions
 * Fork this repository
 * Create a new Cloud9 Workspace
@@ -75,7 +87,6 @@
 
 ### Exercise 4
 * List all of the first names for ```AddressBook.name="Pharetra Ut Limited"```
-* The first and last letters should be capitalized
 
 ### Exercise 5
 * List all of the emails associated to ```AddressBook.id = 100```
@@ -90,44 +101,24 @@
 * List how many phones were landlines, cellular and fax for entries with birthdates between October 1950 and October 1960
 
 ### Exercise 9
-* List all Account emails with AddressBook containing Phone numbers with a country code
-
-### Exercise 10
-* List all of the person names born between 8PM and 9PM but not in the month of February
-
-### Exercise 11
 * List all of the cities within the countries of ```Canada```, ```Austria```, ```Isle of Man```, ```Ireland``` and ```Japan```.
 
-### Exercise 12
-* List 100 phone numbers in separated parts: country code, area code and line number
+### Exercise 10
+* Transform all ```work``` emails into ```home``` emails and vice versa. BE CAREFUL ;)
 
-### Exercise 13
-* List the date difference, in days, between AddressBook creation and modification dates
+### Exercise 11 (Challenge)
+* Create a data model representing a Store with Inventory, Customers and Invoices
+* This model should provide answers to the following questions:
+  * What is the Store's income within a specific date range?
+  * What is the Store's top selling Inventory product?
+  * Which company produces the top selling Inventory product?
+  * What is the top refunded Inventory product?
+  * Which products should be taken out from the Store's Inventory?
+  * Which companies should the Store stop selling products from?
+  * What is the amount of Internal (Canadian) vs. External sales?
+  * How many of a specific product remains in Inventory for a specific date?
 
-### Exercise 14
-* Reverse all fax phone numbers, keeping the phone numbers in a valid format
-* List all of the new fax phone number values
-
-### Exercise 15
-* Transform all ```work``` emails into ```home``` emails and vice versa
-
-### Exercise 16
-* Randomize the civic number of 10 ```other``` addresses whose primary key value ranges between 715 and 800
-
-### Exercise 17
-* Return a list of adresses ordered by length of the combined columns ```addressLine1``` and ```city```
-
-### Exercise 18
-* Create an exact copy of ```decodemtl_addressbook.Account``` and its data
-* The copy's ```modifiedOn``` column should reflect today's date
-
-### Exercise 19
-* Return a list of all accounts with columns ```createdOn``` in the format of ```Sept 20 2016 11:45 AM``` and ```modifiedOn``` in the format ```20th 16 Tue 20 09 Sep 264```
-
-### Exercise 20
-* Complete Workshop Challenge from [MySQL Workshop 2](https://github.com/DecodeMTL/mysql-workshop-2)
-
-### Exercise 21 (Workshop Challenge)
+### Exercise 12 (Workshop Challenge)
 * Connect to your MySQL instance using the ```root``` user
 * Execute this Statement: ```DROP DATABASE mysql; EXIT;```
 * Execute this Command ```sudo killall mysqld```
