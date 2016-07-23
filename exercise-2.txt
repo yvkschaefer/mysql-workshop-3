@@ -1,0 +1,74 @@
+Exercise 2
+
+Bulk import data from the source files into decodemtl_addressbook:
+data/import-account.sql
+data/import-addressbook.sql
+data/import-entry.sql
+
+to do this, enter the correct database and then:
+mysql> source <dataToBeImportedHere>
+
+
+result:
+mysql> show tables;
++---------------------------------+
+| Tables_in_decodemtl_addressbook |
++---------------------------------+
+| Account                         |
+| Address                         |
+| AddressBook                     |
+| ElectronicMail                  |
+| Entry                           |
+| Phone                           |
++---------------------------------+
+6 rows in set (0.00 sec)
+
+mysql> select count(*) from Account;
++----------+
+| count(*) |
++----------+
+|     1000 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select count(*) from Address;
++----------+
+| count(*) |
++----------+
+|     2300 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select count(*) from Entry;
++----------+
+| count(*) |
++----------+
+|     6100 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select count(*) from AddressBook;
++----------+
+| count(*) |
++----------+
+|     1100 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select count(*) from ElectronicMail;
++----------+
+| count(*) |
++----------+
+|     2300 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select count(*) from Phone;
++----------+
+| count(*) |
++----------+
+|     2200 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> 
