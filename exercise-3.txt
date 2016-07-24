@@ -1,0 +1,260 @@
+Exercise 3
+
+List all of the countries with respective occurence totals in DESC order
+Country names should all appear lowercase
+
+mysql> SELECT COUNT(*) AS Number_Of_Occurence, LCASE(country) FROM Address GROUP BY country ORDER BY COUNT(*) DESC;
++---------------------+----------------------------------------------+
+| Number_Of_Occurence | LCASE(country)                               |
++---------------------+----------------------------------------------+
+|                  18 | mozambique                                   |
+|                  16 | saint helena, ascension and tristan da cunha |
+|                  15 | curaçao                                      |
+|                  15 | thailand                                     |
+|                  15 | united states minor outlying islands         |
+|                  15 | andorra                                      |
+|                  15 | canada                                       |
+|                  15 | argentina                                    |
+|                  15 | lebanon                                      |
+|                  15 | wallis and futuna                            |
+|                  14 | united kingdom (great britain)               |
+|                  14 | sri lanka                                    |
+|                  14 | ethiopia                                     |
+|                  14 | united arab emirates                         |
+|                  14 | netherlands                                  |
+|                  14 | brazil                                       |
+|                  14 | congo, the democratic republic of the        |
+|                  14 | dominica                                     |
+|                  13 | seychelles                                   |
+|                  13 | norfolk island                               |
+|                  13 | aruba                                        |
+|                  13 | venezuela                                    |
+|                  13 | lithuania                                    |
+|                  13 | cook islands                                 |
+|                  13 | french polynesia                             |
+|                  13 | liberia                                      |
+|                  13 | equatorial guinea                            |
+|                  13 | switzerland                                  |
+|                  13 | tonga                                        |
+|                  13 | mayotte                                      |
+|                  13 | cocos (keeling) islands                      |
+|                  13 | slovakia                                     |
+|                  12 | virgin islands, united states                |
+|                  12 | isle of man                                  |
+|                  12 | saint kitts and nevis                        |
+|                  12 | guinea                                       |
+|                  12 | botswana                                     |
+|                  12 | grenada                                      |
+|                  12 | finland                                      |
+|                  12 | senegal                                      |
+|                  12 | oman                                         |
+|                  12 | ireland                                      |
+|                  12 | christmas island                             |
+|                  12 | kazakhstan                                   |
+|                  12 | guinea-bissau                                |
+|                  12 | jordan                                       |
+|                  12 | anguilla                                     |
+|                  12 | malaysia                                     |
+|                  12 | turkey                                       |
+|                  12 | syria                                        |
+|                  11 | myanmar                                      |
+|                  11 | faroe islands                                |
+|                  11 | guernsey                                     |
+|                  11 | guatemala                                    |
+|                  11 | qatar                                        |
+|                  11 | belize                                       |
+|                  11 | peru                                         |
+|                  11 | tanzania                                     |
+|                  11 | india                                        |
+|                  11 | djibouti                                     |
+|                  11 | ukraine                                      |
+|                  11 | lesotho                                      |
+|                  11 | panama                                       |
+|                  11 | latvia                                       |
+|                  11 | cambodia                                     |
+|                  11 | saint lucia                                  |
+|                  11 | åland islands                                |
+|                  11 | vanuatu                                      |
+|                  11 | belarus                                      |
+|                  11 | turks and caicos islands                     |
+|                  11 | austria                                      |
+|                  11 | palau                                        |
+|                  11 | congo (brazzaville)                          |
+|                  11 | philippines                                  |
+|                  11 | burundi                                      |
+|                  11 | mexico                                       |
+|                  11 | bouvet island                                |
+|                  11 | luxembourg                                   |
+|                  11 | kiribati                                     |
+|                  11 | san marino                                   |
+|                  11 | french southern territories                  |
+|                  10 | antarctica                                   |
+|                  10 | cape verde                                   |
+|                  10 | timor-leste                                  |
+|                  10 | indonesia                                    |
+|                  10 | kuwait                                       |
+|                  10 | tunisia                                      |
+|                  10 | kyrgyzstan                                   |
+|                  10 | dominican republic                           |
+|                  10 | cayman islands                               |
+|                  10 | tokelau                                      |
+|                  10 | australia                                    |
+|                  10 | zambia                                       |
+|                  10 | chad                                         |
+|                  10 | taiwan                                       |
+|                  10 | jersey                                       |
+|                  10 | guam                                         |
+|                  10 | south africa                                 |
+|                  10 | ghana                                        |
+|                  10 | madagascar                                   |
+|                  10 | zimbabwe                                     |
+|                  10 | rwanda                                       |
+|                  10 | afghanistan                                  |
+|                  10 | benin                                        |
+|                  10 | costa rica                                   |
+|                  10 | algeria                                      |
+|                  10 | micronesia                                   |
+|                  10 | antigua and barbuda                          |
+|                  10 | united states                                |
+|                   9 | nicaragua                                    |
+|                   9 | russian federation                           |
+|                   9 | albania                                      |
+|                   9 | martinique                                   |
+|                   9 | turkmenistan                                 |
+|                   9 | slovenia                                     |
+|                   9 | belgium                                      |
+|                   9 | tuvalu                                       |
+|                   9 | france                                       |
+|                   9 | tajikistan                                   |
+|                   9 | western sahara                               |
+|                   9 | israel                                       |
+|                   9 | cuba                                         |
+|                   9 | gambia                                       |
+|                   9 | uruguay                                      |
+|                   9 | swaziland                                    |
+|                   9 | hungary                                      |
+|                   9 | cyprus                                       |
+|                   9 | serbia                                       |
+|                   9 | guyana                                       |
+|                   9 | bangladesh                                   |
+|                   9 | saint pierre and miquelon                    |
+|                   9 | british indian ocean territory               |
+|                   9 | cameroon                                     |
+|                   9 | bosnia and herzegovina                       |
+|                   9 | virgin islands, british                      |
+|                   9 | reunion                                      |
+|                   9 | suriname                                     |
+|                   9 | montserrat                                   |
+|                   9 | gibraltar                                    |
+|                   9 | bonaire, sint eustatius and saba             |
+|                   9 | greenland                                    |
+|                   9 | armenia                                      |
+|                   9 | bulgaria                                     |
+|                   8 | japan                                        |
+|                   8 | iraq                                         |
+|                   8 | central african republic                     |
+|                   8 | marshall islands                             |
+|                   8 | côte d'ivoire (ivory coast)                  |
+|                   8 | pitcairn islands                             |
+|                   8 | comoros                                      |
+|                   8 | colombia                                     |
+|                   8 | czech republic                               |
+|                   8 | nigeria                                      |
+|                   8 | northern mariana islands                     |
+|                   8 | honduras                                     |
+|                   8 | american samoa                               |
+|                   8 | new caledonia                                |
+|                   8 | bermuda                                      |
+|                   8 | estonia                                      |
+|                   8 | greece                                       |
+|                   8 | solomon islands                              |
+|                   8 | mali                                         |
+|                   8 | macedonia                                    |
+|                   8 | brunei                                       |
+|                   8 | uganda                                       |
+|                   8 | yemen                                        |
+|                   8 | eritrea                                      |
+|                   8 | korea, north                                 |
+|                   8 | saint barthélemy                             |
+|                   8 | papua new guinea                             |
+|                   8 | bhutan                                       |
+|                   8 | puerto rico                                  |
+|                   8 | maldives                                     |
+|                   8 | georgia                                      |
+|                   8 | azerbaijan                                   |
+|                   8 | holy see (vatican city state)                |
+|                   8 | italy                                        |
+|                   8 | chile                                        |
+|                   8 | germany                                      |
+|                   8 | sao tome and principe                        |
+|                   8 | el salvador                                  |
+|                   8 | south sudan                                  |
+|                   8 | uzbekistan                                   |
+|                   7 | sierra leone                                 |
+|                   7 | singapore                                    |
+|                   7 | pakistan                                     |
+|                   7 | ecuador                                      |
+|                   7 | falkland islands                             |
+|                   7 | mauritania                                   |
+|                   7 | south georgia and the south sandwich islands |
+|                   7 | macao                                        |
+|                   7 | saint martin                                 |
+|                   7 | bahrain                                      |
+|                   7 | kenya                                        |
+|                   7 | norway                                       |
+|                   7 | barbados                                     |
+|                   7 | poland                                       |
+|                   7 | heard island and mcdonald islands            |
+|                   7 | fiji                                         |
+|                   7 | bahamas                                      |
+|                   7 | malta                                        |
+|                   7 | mongolia                                     |
+|                   7 | egypt                                        |
+|                   7 | niue                                         |
+|                   7 | gabon                                        |
+|                   7 | iran                                         |
+|                   6 | libya                                        |
+|                   6 | china                                        |
+|                   6 | romania                                      |
+|                   6 | angola                                       |
+|                   6 | svalbard and jan mayen islands               |
+|                   6 | french guiana                                |
+|                   6 | spain                                        |
+|                   6 | namibia                                      |
+|                   6 | laos                                         |
+|                   6 | sudan                                        |
+|                   6 | morocco                                      |
+|                   6 | croatia                                      |
+|                   6 | denmark                                      |
+|                   6 | new zealand                                  |
+|                   6 | guadeloupe                                   |
+|                   6 | sint maarten                                 |
+|                   6 | moldova                                      |
+|                   6 | paraguay                                     |
+|                   6 | bolivia                                      |
+|                   6 | togo                                         |
+|                   6 | somalia                                      |
+|                   6 | burkina faso                                 |
+|                   6 | portugal                                     |
+|                   6 | viet nam                                     |
+|                   6 | malawi                                       |
+|                   5 | monaco                                       |
+|                   5 | montenegro                                   |
+|                   5 | haiti                                        |
+|                   5 | trinidad and tobago                          |
+|                   5 | korea, south                                 |
+|                   5 | sweden                                       |
+|                   5 | palestine, state of                          |
+|                   5 | nauru                                        |
+|                   5 | liechtenstein                                |
+|                   5 | nepal                                        |
+|                   5 | hong kong                                    |
+|                   5 | samoa                                        |
+|                   4 | jamaica                                      |
+|                   3 | iceland                                      |
+|                   3 | saint vincent and the grenadines             |
+|                   3 | mauritius                                    |
+|                   3 | saudi arabia                                 |
+|                   2 | niger                                        |
++---------------------+----------------------------------------------+
+249 rows in set (0.00 sec)
