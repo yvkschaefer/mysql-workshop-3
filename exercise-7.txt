@@ -1,0 +1,8 @@
+Exercise 7
+
+List all possible domain name values for ElectronicMail (email@domain.name)
+
+
+SELECT SUBSTRING_INDEX(content, '@', -1) FROM ElectronicMail;
+
+2300 rows in set (0.00 sec)
