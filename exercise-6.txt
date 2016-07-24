@@ -1,0 +1,16 @@
+Exercise 6
+
+List all of the phone numbers for Jenkins, Charlotte
+
+mysql> SELECT Entry.lastName, Entry.firstName, Phone.content 
+FROM AddressBook 
+JOIN Entry ON AddressBook.id = Entry.addressBookId 
+JOIN Phone ON Entry.id = Phone.entryId 
+WHERE Entry.firstName = 'Charlotte' AND Entry.lastName = 'Jenkins';                                                                                
++----------+-----------+----------------+
+| lastName | firstName | content        |
++----------+-----------+----------------+
+| Jenkins  | Charlotte | (110) 167-3420 |
+| Jenkins  | Charlotte | (605) 175-1334 |
++----------+-----------+----------------+
+2 rows in set (0.01 sec)
