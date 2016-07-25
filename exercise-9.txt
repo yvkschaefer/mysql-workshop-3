@@ -1,0 +1,78 @@
+Exercise 9
+
+List all of the cities within the countries of Canada, Austria, Isle of Man, Ireland and Japan.
+
+
+mysql> SELECT city, country 
+FROM Address 
+WHERE 
+    country = 'Canada' 
+    OR country = 'Austria' 
+    OR country = 'Isle of Man' 
+    OR country = 'Ireland' 
+    OR country = 'Japan' 
+ORDER BY country; 
+
++----------------+-------------+
+| city           | country     |
++----------------+-------------+
+| Dubbo          | Austria     |
+| Bodmin         | Austria     |
+| Alness         | Austria     |
+| Zwickau        | Austria     |
+| Siedlce        | Austria     |
+| Edmundston     | Austria     |
+| Shimla         | Austria     |
+| Ceyhan         | Austria     |
+| Hamburg        | Austria     |
+| Tauranga       | Austria     |
+| Vienna         | Austria     |
+| Calmar         | Canada      |
+| San Francisco  | Canada      |
+| Tirrases       | Canada      |
+| Quesada        | Canada      |
+| Springfield    | Canada      |
+| Baulers        | Canada      |
+| Rollegem       | Canada      |
+| Hillsboro      | Canada      |
+| Angers         | Canada      |
+| Satara         | Canada      |
+| Mabompr?       | Canada      |
+| Pietraroja     | Canada      |
+| Moulins        | Canada      |
+| Anápolis       | Canada      |
+| Cork           | Canada      |
+| Raj Nandgaon   | Ireland     |
+| Cagnes-sur-Mer | Ireland     |
+| Terneuzen      | Ireland     |
+| Meridian       | Ireland     |
+| Lasnigo        | Ireland     |
+| Chestermere    | Ireland     |
+| Belfast        | Ireland     |
+| Assen          | Ireland     |
+| Galway         | Ireland     |
+| Cartago        | Ireland     |
+| Kraków         | Ireland     |
+| Jackson        | Ireland     |
+| Belfast        | Isle of Man |
+| Pabianice      | Isle of Man |
+| Dover          | Isle of Man |
+| Nagaon         | Isle of Man |
+| Kailua         | Isle of Man |
+| Ceyhan         | Isle of Man |
+| Horsham        | Isle of Man |
+| San Vicente    | Isle of Man |
+| Chartres       | Isle of Man |
+| Bremerhaven    | Isle of Man |
+| Denderbelle    | Isle of Man |
+| Ogbomosho      | Isle of Man |
+| Abbeville      | Japan       |
+| Berlin         | Japan       |
+| Bozeman        | Japan       |
+| Pontevedra     | Japan       |
+| Rzeszów        | Japan       |
+| Houston        | Japan       |
+| ?slahiye       | Japan       |
+| Milena         | Japan       |
++----------------+-------------+
+58 rows in set (0.00 sec)
