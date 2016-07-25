@@ -1,0 +1,44 @@
+Exercise 10
+
+Transform all work emails into home emails and vice versa. BE CAREFUL ;)
+
+
+mysql> SELECT COUNT(*), type 
+FROM ElectronicMail 
+WHERE 
+    type = 'home' 
+    OR type = 'work' 
+    OR type = 'other' 
+GROUP BY type;
++----------+-------+
+| COUNT(*) | type  |
++----------+-------+
+|      920 | home  |
+|      690 | work  |
+|      690 | other |
++----------+-------+
+3 rows in set (0.00 sec)
+
+
+mysql> UPDATE ElectronicMail 
+SET type = CASE 
+WHEN type = 'work' THEN 'home' 
+WHEN type = 'home' THEN 'work' 
+ELSE 'other' 
+END;
+
+Query OK, 1610 rows affected (0.02 sec)
+Rows matched: 2300  Changed: 1610  Warnings: 0
+
+
+mysql> SELECT COUNT(*), type FROM ElectronicMail WHERE type = 'home' OR type = 'work' OR type = 'other' GROUP BY type;
++----------+-------+
+| COUNT(*) | type  |
++----------+-------+
+|      690 | home  |
+|      920 | work  |
+|      690 | other |
++----------+-------+
+3 rows in set (0.00 sec)
+
+mysql> 
